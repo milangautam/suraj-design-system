@@ -1,0 +1,151 @@
+/* ── Fonts ─────────────────────────────────────────────────────────────── */
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Variable.woff2') format('woff2');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/GeistMono-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Tailwind ──────────────────────────────────────────────────────────── */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Semantic color tokens — Light mode (default) ──────────────────────── */
+
+:root {
+  /* Surface */
+  --color-surface-bg-primary:   #FAFAF9;
+  --color-surface-bg-secondary: #F5F5F4;
+  --color-surface-overlay:      #1C1917;
+  --color-surface-default:      #FFFFFF;
+  --color-surface-raised:       #FFFFFF;
+
+  /* Text */
+  --color-text-primary:   #1C1917;
+  --color-text-secondary: #57534E;
+  --color-text-tertiary:  #A8A29E;
+  --color-text-disabled:  #D6D3D1;
+  --color-text-inverse:   #FFFFFF;
+  --color-text-brand:     #F75C38;
+
+  /* Border */
+  --color-border-default: #E7E5E4;
+  --color-border-strong:  #D6D3D1;
+  --color-border-focus:   #5F6FFF;
+  --color-border-error:   #EF4444;
+
+  /* Brand */
+  --color-brand-primary:   #F75C38;
+  --color-brand-secondary: #5F6FFF;
+  --color-brand-accent:    #EC4899;
+  --color-brand-warning:   #F5A623;
+
+  /* Feedback — Error */
+  --color-feedback-error-bg:     #FEF2F2;
+  --color-feedback-error-border: #FCA5A5;
+  --color-feedback-error-text:   #B91C1C;
+
+  /* Feedback — Warning */
+  --color-feedback-warning-bg:     #FEFAEC;
+  --color-feedback-warning-border: #F9CE62;
+  --color-feedback-warning-text:   #AD6D08;
+
+  /* Feedback — Success */
+  --color-feedback-success-bg:     #ECFDF5;
+  --color-feedback-success-border: #6EE7B7;
+  --color-feedback-success-text:   #047857;
+
+  /* Feedback — Info */
+  --color-feedback-info-bg:     #EDEFFF;
+  --color-feedback-info-border: #888FFF;
+  --color-feedback-info-text:   #3038BF;
+}
+
+/* ── Semantic color tokens — Dark mode ─────────────────────────────────── */
+
+.dark {
+  /* Surface */
+  --color-surface-bg-primary:   #0C0A09;
+  --color-surface-bg-secondary: #1C1917;
+  --color-surface-overlay:      #0C0A09;
+  --color-surface-default:      #1C1917;
+  --color-surface-raised:       #292524;
+
+  /* Text */
+  --color-text-primary:   #FAFAF9;
+  --color-text-secondary: #A8A29E;
+  --color-text-tertiary:  #57534E;
+  --color-text-disabled:  #44403C;
+  --color-text-inverse:   #1C1917;
+  --color-text-brand:     #F56D53;
+
+  /* Border */
+  --color-border-default: #44403C;
+  --color-border-strong:  #57534E;
+  --color-border-focus:   #6F78FF;
+  --color-border-error:   #F87171;
+
+  /* Brand */
+  --color-brand-primary:   #F56D53;
+  --color-brand-secondary: #6F78FF;
+  --color-brand-accent:    #F472B6;
+  --color-brand-warning:   #F7BC3D;
+
+  /* Feedback — Error */
+  --color-feedback-error-bg:     #450A0A;
+  --color-feedback-error-border: #F87171;
+  --color-feedback-error-text:   #FCA5A5;
+
+  /* Feedback — Warning */
+  --color-feedback-warning-bg:     #3A2001;
+  --color-feedback-warning-border: #F7BC3D;
+  --color-feedback-warning-text:   #F9CE62;
+
+  /* Feedback — Success */
+  --color-feedback-success-bg:     #022C22;
+  --color-feedback-success-border: #34D399;
+  --color-feedback-success-text:   #6EE7B7;
+
+  /* Feedback — Info */
+  --color-feedback-info-bg:     #080A4D;
+  --color-feedback-info-border: #6F78FF;
+  --color-feedback-info-text:   #888FFF;
+}
+
+/* ── Base styles ───────────────────────────────────────────────────────── */
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Geist', system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-text-primary);
+    background-color: var(--color-surface-bg-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
