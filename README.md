@@ -1,16 +1,50 @@
-# React + Vite
+# Suraj Design System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Work in progress** — foundations are complete, components are being built.
 
-Currently, two official plugins are available:
+Suraj (सूरज, Hindi for *sun*) is a multi-color design system built for scale. It provides a shared token foundation, component library, and documentation that multiple products can build on top of.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Layer | Tool |
+|---|---|
+| Components | React |
+| Styling | Tailwind CSS v3 |
+| Documentation | Storybook 10 |
+| Fonts | Satoshi · Geist · Geist Mono |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## What's done
+
+- [x] Color primitives — 7 scales (Solar, Pulse, Glow, Sage, Bloom, Error, Zinc), 11 steps each
+- [x] Semantic color tokens — 31 tokens with Light and Dark mode values
+- [x] Typography — 12 text styles across Satoshi, Geist, and Geist Mono
+- [x] Spacing scale — 14 tokens on a 4px grid (2–128px)
+- [x] Border radius — 8 tokens (none → full)
+- [x] Shadows — 6 elevation styles (sm → 2xl + inner)
+- [x] Tailwind config — all tokens wired up
+- [x] Storybook — configured with light/dark mode switching
+
+## What's next
+
+- [ ] Button component
+- [ ] Input component
+- [ ] Badge / Tag
+- [ ] Card
+- [ ] More components...
+
+---
+
+## Getting started
+
+```bash
+npm install
+npm run storybook
+```
+
+---
+
+Built by [Milan Gautam](https://github.com/milangautam)
